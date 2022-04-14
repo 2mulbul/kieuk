@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<link rel="stylesheet" href="./style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="scroll-instruction">
+			<span class="scroll-text">scroll</span>
+			<img src="./icon/arrow_scroll2.svg" alt="" srcset="" class="scroll-arrow"></img>
+
+		</div>
+		
+		<header>
+			<div class="my-info"><a href="https://www.instagram.com/2mulbul/?hl=ko" target="_blank">2MULBUL</a></div>
+			<div class="jang-info">장기하와 얼굴들</div>
+			<div class="brightness-bt">
+				<span class="material-icons">nightlight</span>
+			</div>
+		</header>
+		<main>
+			<div id="basicCanvas"></div>
+		</main>
+		<div class="song-instruction">
+			<span id="song-text">enjoy with song</span>
+		</div>
+		<footer>
+			<span class="song-icon material-icons" id="song-icon1">music_note</span>
+			<div class="album-info"><a href="https://youtu.be/djvGxJ7s_LU" target="_blank">내 사랑에 노련한 사람이 어딨나요</a></div>
+			<span class="song-icon material-icons" id="song-icon2">music_note</span>
+		</footer>
+	</div>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+	<script src="./sketch.js"></script>
+	<script src="./clickEvent.js"></script>
+	<script src="./firstExplain.js"></script>
+
+</body>
+</html>

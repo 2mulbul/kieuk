@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Black+Han+Sans&display=swap');
+
+@font-face {
+    font-family: 'beanpoleotB00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotB00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+	line-height:100%;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+head, body{
+	width: 100%;
+	height:100%;
+}
+.wrapper{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+header, footer{
+	font-family: 'Black Han Sans', sans-serif;
+	position: absolute;
+	width:100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+
+	z-index: 2;
+}
+header{
+	left:0;
+	top:0;
+	justify-content: center;
+}
+footer{
+	left:0;
+	bottom:0;
+	justify-content: center;
+}
+main{
+	width:100%;
+	height: calc(100% - 80px * 2);
+}
+a {
+
+	color: black ;
+	text-decoration: none;
+}
+.my-info {
+	font-family: 'Bayon', sans-serif;
+	font-size: 26px;
+	position: absolute;
+	left:20px;
+}
+
+.brightness-bt {
+	position: absolute;
+	right:20px;
+	cursor: pointer;
+}
+.brightness-bt span{
+	font-size: 26px;
+	height:26px;
+}
+.jang-info, .album-info {
+	font-size: 50px;
+	margin-bottom:-10px;
+}
+.scroll-instruction {
+	transform:translateY(-50%);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 20px;
+	top:50%;
+	z-index:3;
+	
+}
+.scroll-text{
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+
+	font-family: 'Bayon', sans-serif;
+	font-size: 26px;
+    color:black;
+    background-color:white;
+	line-height: 33%;
+	width: 6px;
+	margin-right: -15px;
+
+	z-index:3;
+}
+#song-text {
+	font-family: 'Bayon', sans-serif;
+	font-size: 26px;
+	transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	/*right: 24px;*/
+	bottom: 75px;
+	z-index: 3;
+}
+.song-icon {
+	font-size: 40px;
+	padding: 0 16px;
+}
+
+/*@media screen and(min-device-width: 320px) and (max-device-width: 480px) {*/
+
+@media only screen and (max-device-width: 575px) {
+	main{
+		width:100%;
+		height: calc(100% - 60px * 2);
+	}
+	header, footer{
+		height: 60px;
+	}
+	.jang-info, .album-info {
+		font-size: 24px;
+		margin-bottom: -5px;
+
+	}
+	.scroll-instruction {
+		right: 16px;
+	}
+	.scroll-text{
+		font-size: 20px;
+	}
+	#song-text {
+		font-size: 20px;
+		bottom: 50px;
+	}
+	.song-icon {
+		margin-bottom: -4px;
+		font-size: 26px;
+		padding: 0 5px;
+	}
+	.my-info {
+		font-size: 18px;
+		margin-bottom: 0px;
+		left:16px;
+	}
+	.brightness-bt{
+		margin-bottom: 0px;
+		right:16px;
+
+	}
+	.brightness-bt span{
+		font-size: 22px;
+		height:22px;
+	}
+}
+
